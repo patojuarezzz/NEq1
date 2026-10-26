@@ -1,10 +1,16 @@
 [gd_scene format=3 uid="uid://38udeukx2y1e"]
 
 [ext_resource type="Texture2D" uid="uid://dajwwiafv6lqx" path="res://boveda-cero-256x240.png" id="1_gmyg6"]
+[ext_resource type="Script" uid="uid://dqcitbv7ilvn0" path="res://boveda_mundo.gd" id="1_hnp53"]
 [ext_resource type="PackedScene" uid="uid://2acpgpeo5lj7" path="res://BovedaRecursos.tscn" id="2_4btgx"]
 [ext_resource type="PackedScene" uid="uid://sbasjflocsjp" path="res://caja_bebidas.tscn" id="3_4btgx"]
+[ext_resource type="PackedScene" uid="uid://dso6fv04kwca3" path="res://panel_control.tscn" id="4_dflsu"]
+[ext_resource type="PackedScene" uid="uid://djorldwc45n40" path="res://pinchos.tscn" id="5_hnp53"]
+[ext_resource type="PackedScene" uid="uid://ov5dbp4ty2gg" path="res://demoledor.tscn" id="6_hoiij"]
+[ext_resource type="PackedScene" uid="uid://bxjpnnkdws3vu" path="res://negociador.tscn" id="7_03yli"]
 
 [node name="BovedaMundo" type="Node2D" unique_id=1966903975]
+script = ExtResource("1_hnp53")
 
 [node name="Fondo" type="Sprite2D" parent="." unique_id=309640253]
 position = Vector2(128, 120)
@@ -14,3 +20,18 @@ texture = ExtResource("1_gmyg6")
 
 [node name="CajaBebidas" parent="." unique_id=198373731 instance=ExtResource("3_4btgx")]
 position = Vector2(104, 194)
+
+[node name="PanelControl" parent="." unique_id=1638277715 instance=ExtResource("4_dflsu")]
+offset_left = -7.0
+offset_top = -17.0
+offset_right = -7.0
+offset_bottom = -17.0
+
+[node name="Pinchos" parent="." unique_id=1330257430 instance=ExtResource("5_hnp53")]
+position = Vector2(151, 194)
+
+[node name="Demoledor" parent="." unique_id=2141818153 instance=ExtResource("6_hoiij")]
+position = Vector2(54, 194)
+
+[node name="Negociador" parent="." unique_id=1923082465 instance=ExtResource("7_03yli")]
+position = Vector2(33, 194)

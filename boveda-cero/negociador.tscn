@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bxjpnnkdws3vu"]
+
+[ext_resource type="Texture2D" uid="uid://b83ry780tyr1n" path="res://negociador-15x15.png" id="1_hhctu"]
+[ext_resource type="Script" uid="uid://brblu3bgv4e7y" path="res://negociador.gd" id="1_whw40"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ojnr2"]
+size = Vector2(15, 16)
+
+[node name="Negociador" type="CharacterBody2D" unique_id=1923082465]
+script = ExtResource("1_whw40")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=361256221]
+texture = ExtResource("1_hhctu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=514522799]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_ojnr2")
